@@ -1,0 +1,32 @@
+﻿@model dynamic
+
+<input id="msg" type="text" />
+<input id="send" type="button" value="Send" />
+<input id="echo" type="button" value="Echo" />
+    
+<ul id="messages">
+        
+</ul>
+
+@section scripts {
+    <script>
+        $(function () {
+            var connection = $.connection("/chat");
+
+            connection.received(function(data) {
+                $("#messages").append("<li>" + data + "</li>");
+            });
+
+            connection.start().done(function() {
+                $("#send").click(function () {
+                    var msg = $("#msg").val();
+                    connection.send(msg);
+                });
+                $("#echo").click(function () {
+                    var msg = $("#msg").val();
+                    connection.send(msg);
+                });
+            });
+        });
+    </script>
+}

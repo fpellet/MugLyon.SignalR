@@ -1,0 +1,35 @@
+﻿@model dynamic
+
+<style>
+    #shape {
+        width: 480px;
+        height: 480px;
+        background-image: url(@Url.Content("~/Content/mug_csharp_microsoft_linq.jpg"));
+        cursor: move;
+    }
+</style>
+
+<div id="shape"></div>
+
+@section scripts {
+    <script src="~/Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var hub = $.connection.moveShape;
+            var $shape = $("#shape");
+
+            hub.client.shapeMoved = function (x, y) {
+                $shape.css({ left: x, top: y });
+            };
+
+            $.connection.hub.start().done(function () {
+                $shape.draggable({
+                    drag: function () {
+                        hub.server.moveShape(this.offsetLeft, this.offsetTop || 0);
+                    }
+                });
+            });
+        });
+    </script>
+}

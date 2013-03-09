@@ -1,0 +1,34 @@
+﻿@model dynamic
+
+<input id="msg" type="text" />
+<input id="send" type="button" value="Send" />
+<input id="echo" type="button" value="Echo" />
+    
+<ul id="messages">
+        
+</ul>
+
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-1.0.0.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var chat = $.connection.chatHub;
+
+            chat.client.newMessage = function (data) {
+                $("#messages").append("<li>" + data + "</li>");
+            };
+
+            $.connection.hub.start().done(function () {
+                $("#send").click(function () {
+                    var msg = $("#msg").val();
+                    chat.server.send(msg);
+                });
+                $("#echo").click(function () {
+                    var msg = $("#msg").val();
+                    chat.server.echo(msg);
+                });
+            });
+        });
+    </script>
+}

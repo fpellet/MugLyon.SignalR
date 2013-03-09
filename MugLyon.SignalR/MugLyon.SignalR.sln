@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugLyon.SignalR.Sample2", "MugLyon.SignalR.Sample2\MugLyon.SignalR.Sample2.csproj", "{0A018653-2C8B-493C-AF77-4CC07CEC910C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugLyon.SignalR.SharedWhiteboard", "MugLyon.SignalR.SharedWhiteboard\MugLyon.SignalR.SharedWhiteboard.csproj", "{5B07F58F-5703-4AA9-B41C-BF16C0BC8CFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugLyon.SignalR.SharedWhiteBoard.Cli", "MugLyon.SignalR.SharedWhiteBoard.Console\MugLyon.SignalR.SharedWhiteBoard.Cli.csproj", "{0A4AE4F0-3341-463C-ACEA-6C099B51830B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugLyon.SignalR.Demo", "MugLyon.SignalR.Demo\MugLyon.SignalR.Demo.csproj", "{61980D0C-2CA0-40D0-A2ED-944EB109C68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MugLyon.SignalR.Demo.LiveCoding", "MugLyon.SignalR.Demo.LiveCoding\MugLyon.SignalR.Demo.LiveCoding.csproj", "{9743EDCA-0AEF-4F0A-9A41-1C9EDD8BD466}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A018653-2C8B-493C-AF77-4CC07CEC910C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A018653-2C8B-493C-AF77-4CC07CEC910C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A018653-2C8B-493C-AF77-4CC07CEC910C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A018653-2C8B-493C-AF77-4CC07CEC910C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B07F58F-5703-4AA9-B41C-BF16C0BC8CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B07F58F-5703-4AA9-B41C-BF16C0BC8CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B07F58F-5703-4AA9-B41C-BF16C0BC8CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B07F58F-5703-4AA9-B41C-BF16C0BC8CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4AE4F0-3341-463C-ACEA-6C099B51830B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4AE4F0-3341-463C-ACEA-6C099B51830B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4AE4F0-3341-463C-ACEA-6C099B51830B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4AE4F0-3341-463C-ACEA-6C099B51830B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61980D0C-2CA0-40D0-A2ED-944EB109C68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61980D0C-2CA0-40D0-A2ED-944EB109C68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61980D0C-2CA0-40D0-A2ED-944EB109C68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61980D0C-2CA0-40D0-A2ED-944EB109C68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9743EDCA-0AEF-4F0A-9A41-1C9EDD8BD466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9743EDCA-0AEF-4F0A-9A41-1C9EDD8BD466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9743EDCA-0AEF-4F0A-9A41-1C9EDD8BD466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9743EDCA-0AEF-4F0A-9A41-1C9EDD8BD466}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
